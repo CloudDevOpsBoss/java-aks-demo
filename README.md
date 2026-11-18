@@ -77,5 +77,12 @@ hello-gradle-project/
 
 
 
+# Docker build
+docker build -t java-demo:v1 .
 
+docker images
+
+docker run -d -p 8080:8080 --name java-app java-demo:v1
+http://localhost:8080
+http://localhost:8080/health
                     
